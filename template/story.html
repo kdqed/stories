@@ -2,7 +2,34 @@
 <html lang="en">
 <head>
 
-  <title>Story</title>
+  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2e3440">
+  
+  <meta charset="utf-8">
+  <meta name="description" content="{{title}} - Stories from Obscure Neighborhoods">
+  
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:url" content="https://stories.hikd.space/{{i}}.html" />
+  <meta property="og:description" content="{{title}} - Stories from Obscure Neighborhoods">
+  <meta property="og:image" content="/img/{{i}}.png">
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:card" content="app"></meta>
+  <meta property="twitter:image" content="/img/{{i}}.png">
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "{{title}}",
+      "image": [
+        "https://stories.hikd.space/img/{{i}}.png",
+      ]
+    }
+  </script>
+  
+  
   <style>
     * {box-sizing: border-box;}
 
@@ -32,6 +59,7 @@
       background: var(--darker);
       color: var(--lighter);
       font-family: hind;
+      line-height: 150%;
     }
     main{
       display: inline-block;
